@@ -13,7 +13,7 @@ function init(){
 
 function squareIt(){
   var current = (parseFloat($(this).text()));
-  $(this).text(Math.pow(current));
+  $(this).text(current * current);
 }
 
 function getNumbers(){
