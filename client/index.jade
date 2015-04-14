@@ -2,13 +2,21 @@ doctype html
 html
   head
     meta(charset='utf-8')      
-    title Apollo
+    title JQ Test 1
     link(rel='stylesheet', href='/vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href=isProd ? '/index.min.css' : '/index.css')
-    link(rel='shortcut icon', href='/favicon.ico')
   body
-    img#apollo(src='/assets/apollo.jpg')
-    h1#title Apollo
-
+    h1 JQ Test 1
+    
+    button#getnums Get Numbers
+    h2 Evens
+    #evens
+    h2 Odds
+    #odds
+      h3 Threes
+      #threes
+      h3 Others
+      #others
+    script(src='/vendor/jquery/dist/jquery.min.js')
     script(src='/vendor/lodash/lodash.min.js')
     script(src=isProd ? '/index.min.js' : '/index.js')
